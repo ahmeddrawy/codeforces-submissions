@@ -16,6 +16,23 @@
     ],
     "timestamp": "Dec/15/2020 21:04"
   },
+  "CF58048236": {
+    "contest_id": 1196,
+    "language": "GNU C++14",
+    "path": "codeforces/1196/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Odd Sum Segments",
+    "problem_url": "https://codeforces.com/contest/1196/problem/B",
+    "submission_id": "CF58048236",
+    "submission_url": "https://codeforces.com/contest/1196/submission/58048236",
+    "tags": [
+      "constructive algorithms",
+      "math",
+      "*1200"
+    ],
+    "timestamp": "Jul/31/2019 03:23"
+  },
   "CF58098143": {
     "contest_id": 1196,
     "language": "GNU C++14",
