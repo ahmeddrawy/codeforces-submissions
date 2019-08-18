@@ -137,22 +137,22 @@ int main() {
     ll n , m , t; cin >> n >> m >> t;
     /// solve nCx * mCy for all x and y
     ll ans = 0;
-    // map<ll , int> upmap;
-    // map<ll , int> downmap;
+    map<ll , int> upmap;
+    map<ll , int> downmap;
     sieve ();
      ll ans2 = 0 ;
     for (int x = 4; x <= min( n , t-1)  ; ++x) {
         int y = t - x;
         if (y > m) continue;
 
-//        ncr(x, n, upmap, downmap);
-//        ncr(y, m, upmap, downmap);
-//        ans2 += solve(upmap, downmap);
-            ans+=(binomialCoeff(n,x) *binomialCoeff(m,y));
-//        upmap.clear();
-//        downmap.clear();
+        ncr(x, n, upmap, downmap);
+        ncr(y, m, upmap, downmap);
+        ans2 += solve(upmap, downmap);
+//            ans+=(binomialCoeff(n,x) *binomialCoeff(m,y));
+        upmap.clear();
+        downmap.clear();
     }
-    // cout<<ans2;
-    cout<<ans;
+    cout<<ans2;
+//    cout<<ans;
 
 }
