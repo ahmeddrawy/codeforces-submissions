@@ -16,6 +16,24 @@
     ],
     "timestamp": "Dec/15/2020 21:04"
   },
+  "CF59949694": {
+    "contest_id": 426,
+    "language": "GNU C++14",
+    "path": "codeforces/426/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Sereja and Swaps",
+    "problem_url": "https://codeforces.com/contest/426/problem/C",
+    "submission_id": "CF59949694",
+    "submission_url": "https://codeforces.com/contest/426/submission/59949694",
+    "tags": [
+      "brute force",
+      "sortings",
+      "two pointers",
+      "*1500"
+    ],
+    "timestamp": "Sep/03/2019 16:07"
+  },
   "CF59962466": {
     "contest_id": 1208,
     "language": "GNU C++14",
