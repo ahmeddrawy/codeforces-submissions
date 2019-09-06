@@ -16,6 +16,24 @@
     ],
     "timestamp": "Dec/15/2020 21:04"
   },
+  "CF60178488": {
+    "contest_id": 1217,
+    "language": "GNU C++14",
+    "path": "codeforces/1217/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Coloring Edges",
+    "problem_url": "https://codeforces.com/contest/1217/problem/D",
+    "submission_id": "CF60178488",
+    "submission_url": "https://codeforces.com/contest/1217/submission/60178488",
+    "tags": [
+      "constructive algorithms",
+      "dfs and similar",
+      "graphs",
+      "*2100"
+    ],
+    "timestamp": "Sep/06/2019 17:19"
+  },
   "CF60197397": {
     "contest_id": 1206,
     "language": "GNU C++14",
