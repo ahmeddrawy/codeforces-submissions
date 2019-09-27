@@ -37,26 +37,52 @@ ll multipy(ll x , ll y ){
 }
 /// max 632 level
 const int N = 2e5 +1;
-int dp[3][N];
+int dp[N][3];
 ll height ;
 ll r , g ;
+int solve(int level , int usedGreen , ll sum  = 0 ){
+    ll usedRed  = (sum - usedGreen);
+    if(usedGreen > g){
+        return 0;
+    }
+    if(level > height){
+        return 1 ;
+    }
+    int &ret = dp[level][usedGreen];
+    if(~ret)
+        return ret;
+    ret = 0 ;
+    if(usedGreen + level <= g){
+        ret = add(ret, solve(level + 1, usedGreen + level , sum + level));
+    }
+    if(usedRed + level <= r){
+        ret = add(ret,  solve(level +1, usedGreen , sum + level));
+    }
+    return ret;
+}
 void up(){
     ll sum = (height*(height+1))/2;
-    for (int j = 0; j <=g ; ++j) 
-            dp[(height +1)&1][j] = 1;
-    for (int H = height; H >=1 ; --H) {
-        ll sum = ((H)*(H-1))/2;
-        for (int usedGreen = 0; usedGreen <=g ; ++usedGreen) {
-            ll usedRed = (sum - usedGreen);
-            int &ret = dp[(H&1)][usedGreen] = 0;
-            if (usedGreen + H <= g) {
-                dp[(H&1)][usedGreen]  = add(dp[(H&1)][usedGreen] , dp[((H+1)&1)][usedGreen+H] );
-            }
-            if (usedRed + H <= r) 
-                ret = add(ret, dp[(H+1)&1][usedGreen]);
+
+    int k= 0 ;
+    dp[0][1] = 1;
+    for (int h = 1; h <=height ; ++h) {
+        ll currsum = ((h)*(h+1))/2;
+        for (int i = 0; i <= g; ++i) {
+
+            ll usedRed  = max ( 0ll , (currsum - i));
+            dp[i][k] = 0 ;
+            if(h<=i )
+                dp[i][k] = add(dp[i][k] , dp[i-h][!k]);
+            if(usedRed <= r)
+                dp[i][k] = add(dp[i][k], dp[i][!k]);
         }
+        k = !k;
     }
-    cout << dp[1][0];
+    ll a = 0 ;
+    for (int j = 0; j <=g ; ++j) {
+        a = add( a , dp[j][!k]);
+    }
+    cout  <<a;
 }
 int main(){
     smile();
