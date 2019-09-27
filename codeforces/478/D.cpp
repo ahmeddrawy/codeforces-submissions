@@ -42,20 +42,19 @@ ll height ;
 ll r , g ;
 void up(){
     ll sum = (height*(height+1))/2;
-    for (int j = 0; j <=g ; ++j)
+    for (int j = 0; j <=g ; ++j) 
             dp[(height +1)&1][j] = 1;
-    int curr = !((height+1)&1);
     for (int H = height; H >=1 ; --H) {
         ll sum = ((H)*(H-1))/2;
         for (int usedGreen = 0; usedGreen <=g ; ++usedGreen) {
             ll usedRed = (sum - usedGreen);
-            int &ret = dp[curr][usedGreen] = 0;
-            if (usedGreen + H <= g)
-                dp[curr][usedGreen]  = add(dp[curr][usedGreen] , dp[!curr][usedGreen+H] );
-            if (usedRed + H <= r)
-                ret = add(ret, dp[!curr][usedGreen]);
+            int &ret = dp[(H&1)][usedGreen] = 0;
+            if (usedGreen + H <= g) {
+                dp[(H&1)][usedGreen]  = add(dp[(H&1)][usedGreen] , dp[((H+1)&1)][usedGreen+H] );
+            }
+            if (usedRed + H <= r) 
+                ret = add(ret, dp[(H+1)&1][usedGreen]);
         }
-        curr = !curr;
     }
     cout << dp[1][0];
 }
@@ -64,7 +63,7 @@ int main(){
     cin >> r>>g;
     ll a= 1, b= 1, c= -2*(r+g);
     height = max((-b+ sqrt(b*b -4*c*a))/2, (-b- sqrt(b*b -4*a*c)/2));
-    // memset(dp ,0 , sizeof(dp));
+    memset(dp ,0 , sizeof(dp));
 //    cout  << solve(1, 0 , 0 );
     up();
 }
