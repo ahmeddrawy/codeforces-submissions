@@ -37,9 +37,40 @@ long long add(long long x, long long y)
 ll multipy(ll x , ll y ){
     return ((x%MOD) *(y%MOD))%MOD;
 }
-
-/// if each node goes  to the next nodes we gurantee no self loops , and no multiple edges
-/// and if we have fully connected one we can gurantee that any subgraph with k veritces will have 2k+p at most
+//const int N = 10 + 3;
+//ll dp[N][N];
+//int row[N];
+//int col[N];
+//int n ;
+//ll solve (int s , int e ){
+//    if(s==e)
+//        return 0 ;
+//    ll &ret = dp[s][e];
+//    if(~ret)
+//        return ret;
+//    ret = LONG_LONG_MAX;
+//    for (int i = s+1; i <e ; ++i) {
+//        if(col[i+1] == row[e] && row[s]==col[i])
+//            ret = min(ret , solve(i+1,e) + solve(s, i) + (row[i]*col[s] *col[i])  + (row[i+1]*col[e]*row[e]));
+//    }
+//
+//
+//}
+//void build(int s, int e){
+//    if(s==e)
+//        return  ;
+//    ll &ret = dp[s][e];
+//    if(~ret)
+////        return ret;
+//    ret = LONG_LONG_MAX;
+//    for (int i = s; i <e ; ++i) {
+//        if(col[i+1] == row[e] && row[s]==col[i])
+//            ret = min(ret , solve(i+1,e) + solve(s, i) + (row[i]*col[s] *col[i])  + (row[i+1]*col[e]*row[e]));
+//    }
+//
+//
+//
+//}
 int main() {
     smile();
     int t;  cin >> t;
