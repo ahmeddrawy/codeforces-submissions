@@ -16,6 +16,24 @@
     ],
     "timestamp": "Dec/15/2020 21:04"
   },
+  "CF63724778": {
+    "contest_id": 71,
+    "language": "GNU C++14",
+    "path": "codeforces/71/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Round Table Knights",
+    "problem_url": "https://codeforces.com/contest/71/problem/C",
+    "submission_id": "CF63724778",
+    "submission_url": "https://codeforces.com/contest/71/submission/63724778",
+    "tags": [
+      "dp",
+      "math",
+      "number theory",
+      "*1600"
+    ],
+    "timestamp": "Oct/29/2019 14:24"
+  },
   "CF63729194": {
     "contest_id": 71,
     "language": "GNU C++14",
