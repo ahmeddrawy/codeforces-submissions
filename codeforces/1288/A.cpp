@@ -124,32 +124,22 @@ int main() {
     while(t--) {
         ll n, d;
         cin >> n >> d;
-        bool tr = false;
-//        cout << sqrt(d)<<endl;
-        for(ll i = 0; i *i<=d  ; ++i){
-            if((d+i)/(i+1)  + i <=n){
-//                cout << i << endl;
-                tr =true;
+
+        ll l = 0 , r= n-1;
+        int ret =-1;
+        while(l<=r){
+            ll mid = (l+r)/2;
+            if(((d+mid)/(mid+1)) + mid <= n){
+                ret= 1;
                 break;
+
+            }
+            else {
+                l = mid+1;
             }
 
         }
-//        if(t)cout << ""
-//        ll l = 0 , r= n-1;
-//        int ret =-1;
-//        while(l<=r){
-//            ll mid = (l+r)/2;
-//            if(((d+mid)/(mid+1)) + mid <= n){
-//                ret= 1;
-//                break;
-//
-//            }
-//            else {
-//                l = mid+1;
-//            }
-//
-//        }
-        if(tr)cout << "YES\n";
+        if(ret >-1)cout << "YES\n";
         else cout <<"NO\n";
 
 
