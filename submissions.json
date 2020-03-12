@@ -16,6 +16,23 @@
     ],
     "timestamp": "Dec/15/2020 21:04"
   },
+  "CF73004914": {
+    "contest_id": 1009,
+    "language": "GNU C++14",
+    "path": "codeforces/1009/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Minimum Ternary String",
+    "problem_url": "https://codeforces.com/contest/1009/problem/B",
+    "submission_id": "CF73004914",
+    "submission_url": "https://codeforces.com/contest/1009/submission/73004914",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*1400"
+    ],
+    "timestamp": "Mar/12/2020 10:13"
+  },
   "CF73007317": {
     "contest_id": 1030,
     "language": "GNU C++14",
