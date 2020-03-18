@@ -16,6 +16,24 @@
     ],
     "timestamp": "Dec/15/2020 21:04"
   },
+  "CF73551200": {
+    "contest_id": 136,
+    "language": "GNU C++14",
+    "path": "codeforces/136/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Replacement",
+    "problem_url": "https://codeforces.com/contest/136/problem/C",
+    "submission_id": "CF73551200",
+    "submission_url": "https://codeforces.com/contest/136/submission/73551200",
+    "tags": [
+      "greedy",
+      "implementation",
+      "sortings",
+      "*1300"
+    ],
+    "timestamp": "Mar/18/2020 10:22"
+  },
   "CF73552130": {
     "contest_id": 102,
     "language": "GNU C++14",
