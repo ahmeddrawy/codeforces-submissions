@@ -16,6 +16,22 @@
     ],
     "timestamp": "Dec/15/2020 21:04"
   },
+  "CF73552668": {
+    "contest_id": 221,
+    "language": "GNU C++14",
+    "path": "codeforces/221/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Little Elephant and Problem",
+    "problem_url": "https://codeforces.com/contest/221/problem/C",
+    "submission_id": "CF73552668",
+    "submission_url": "https://codeforces.com/contest/221/submission/73552668",
+    "tags": [
+      "sortings",
+      "*1300"
+    ],
+    "timestamp": "Mar/18/2020 10:44"
+  },
   "CF73600021": {
     "contest_id": 581,
     "language": "GNU C++14",
