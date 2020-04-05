@@ -16,6 +16,22 @@
     ],
     "timestamp": "Dec/15/2020 21:04"
   },
+  "CF75600385": {
+    "contest_id": 1296,
+    "language": "GNU C++14",
+    "path": "codeforces/1296/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Array with Odd Sum",
+    "problem_url": "https://codeforces.com/contest/1296/problem/A",
+    "submission_id": "CF75600385",
+    "submission_url": "https://codeforces.com/contest/1296/submission/75600385",
+    "tags": [
+      "math",
+      "*800"
+    ],
+    "timestamp": "Apr/05/2020 21:02"
+  },
   "CF75600866": {
     "contest_id": 1296,
     "language": "GNU C++14",
