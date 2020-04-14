@@ -16,6 +16,22 @@
     ],
     "timestamp": "Dec/15/2020 21:04"
   },
+  "CF76692750": {
+    "contest_id": 1335,
+    "language": "GNU C++14",
+    "path": "codeforces/1335/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Construct the String",
+    "problem_url": "https://codeforces.com/contest/1335/problem/B",
+    "submission_id": "CF76692750",
+    "submission_url": "https://codeforces.com/contest/1335/submission/76692750",
+    "tags": [
+      "constructive algorithms",
+      "*900"
+    ],
+    "timestamp": "Apr/14/2020 14:42"
+  },
   "CF76694942": {
     "contest_id": 1335,
     "language": "GNU C++14",
