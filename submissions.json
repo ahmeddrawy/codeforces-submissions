@@ -16,6 +16,23 @@
     ],
     "timestamp": "Dec/15/2020 21:04"
   },
+  "CF76696387": {
+    "contest_id": 1335,
+    "language": "GNU C++14",
+    "path": "codeforces/1335/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Anti-Sudoku",
+    "problem_url": "https://codeforces.com/contest/1335/problem/D",
+    "submission_id": "CF76696387",
+    "submission_url": "https://codeforces.com/contest/1335/submission/76696387",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "*1300"
+    ],
+    "timestamp": "Apr/14/2020 15:18"
+  },
   "CF80812030": {
     "contest_id": 415,
     "language": "GNU C++14",
